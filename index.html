@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <h1></h1>
+      <!-- <table>
+        <tr>
+          <th>Product Name</th>
+          <th>Image</th>
+          <th>Title</th>
+          <th>Discr</th>
+          <th>Price</th>
+        </tr>
+        <tr>
+          <td>Samsung</td>
+          <td>$600</td>
+        </tr>
+        <tr>
+          <td>Apple</td>
+          <td>$1500</td>
+        </tr>
+        <tr>
+          <td>Google</td>
+          <td>$1200</td>
+        </tr>
+        <tr>
+          <td>OnePlus</td>
+          <td>$1100</td>
+        </tr>
+        <tr>
+          <td>Motorola</td>
+          <td>$1000</td>
+        </tr>
+      </table> -->
+      <table id="myTable"></table>
+    </div>
+    <script>
+      document.getElementsByTagName("h1")[0].innerHTML =
+        "Mobilize Smartphone Shop";
+
+      //   let table = document.getElementById("myTable");
+      //   let row0 = table.insertRow(0);
+      //   let cell1 = row0.insertCell(0);
+      //   let cell2 = row0.insertCell(1);
+      //   let cell3 = row0.insertCell(2);
+      //   let cell4 = row0.insertCell(3);
+      //   let cell5 = row0.insertCell(4);
+      //   cell1.innerHTML = "PRODUCT NAME";
+      //   cell2.innerHTML = "IMAGE";
+      //   cell3.innerHTML = "TITLE";
+      //   cell4.innerHTML = "DISCRIPTION";
+      //   cell5.innerHTML = "PRICE";
+
+      //   let row1 = table.insertRow(1);
+      //   let cell11 = row1.insertCell(0);
+      //   let cell12 = row1.insertCell(1);
+      //   let cell13 = row1.insertCell(2);
+      //   let cell14 = row1.insertCell(3);
+      //   let cell15 = row1.insertCell(4);
+      //   cell11.innerHTML = "Sumsung";
+      //   cell12.innerHTML =
+      //     '<img src="https://images.unsplash.com/photo-1665338091398-c71b9704abcb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" width="100" height="100" />';
+      //   cell13.innerHTML = "Divested";
+      //   cell14.innerHTML =
+      //     "Samsung General Chemicals was sold to Hanwha. Another chemical division was sold to Lotte Corporation in 2016";
+      //   cell15.innerHTML = "$700";
+
+      //   let row2 = table.insertRow(2);
+      //   let cell21 = row2.insertCell(0);
+      //   let cell22 = row2.insertCell(1);
+      //   let cell23 = row2.insertCell(2);
+      //   let cell24 = row2.insertCell(3);
+      //   let cell25 = row2.insertCell(4);
+      //   cell21.innerHTML = "Apple";
+      //   cell22.innerHTML =
+      //     '<img src="https://images.unsplash.com/photo-1665338091398-c71b9704abcb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" width="100" height="100" />';
+      //   cell23.innerHTML = "iPhone 13Pro";
+      //   cell24.innerHTML =
+      //     "Apple Computer Company was founded on April 1, 1976, by Steve Jobs, Steve Wozniak, and Ronald Wayne as a business partnership.[6][9] The company's first product was the Apple I, a computer designed and hand-built entirely by Wozniak.[";
+      //   cell25.innerHTML = "$1500";
+
+      //   let row3 = table.insertRow(3);
+      //   let cell31 = row3.insertCell(0);
+      //   let cell32 = row3.insertCell(1);
+      //   let cell33 = row3.insertCell(2);
+      //   let cell34 = row3.insertCell(3);
+      //   let cell35 = row3.insertCell(4);
+      //   cell31.innerHTML = "Google";
+      //   cell32.innerHTML =
+      //     '<img src="https://images.unsplash.com/photo-1665338091398-c71b9704abcb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" width="100" height="100" />';
+      //   cell33.innerHTML = "Google LLC";
+      //   cell34.innerHTML =
+      //     "Google began in January 1996 as a research project by Larry Page and Sergey Brin when they were both PhD students at Stanford University in California";
+      //   cell35.innerHTML = "$1000";
+
+      //   let row4 = table.insertRow(4);
+      //   let cell41 = row4.insertCell(0);
+      //   let cell42 = row4.insertCell(1);
+      //   let cell43 = row4.insertCell(2);
+      //   let cell44 = row4.insertCell(3);
+      //   let cell45 = row4.insertCell(4);
+      //   cell41.innerHTML = "OnePlus";
+      //   cell42.innerHTML =
+      //     '<img src="https://images.unsplash.com/photo-1665338091398-c71b9704abcb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" width="100" height="100" />';
+      //   cell43.innerHTML = "OnePlus Buds Pro";
+      //   cell44.innerHTML =
+      //     "40dB Smart Adaptive Noise Cancellation | Up to 38 hours of listening | IP55 Water & Sweat Resistance";
+      //   cell45.innerHTML = "$1200";
+
+      //   let row5 = table.insertRow(5);
+      //   let cell51 = row5.insertCell(0);
+      //   let cell52 = row5.insertCell(1);
+      //   let cell53 = row5.insertCell(2);
+      //   let cell54 = row5.insertCell(3);
+      //   let cell55 = row5.insertCell(4);
+      //   cell51.innerHTML = "Motorola";
+      //   cell52.innerHTML =
+      //     '<img src="https://images.unsplash.com/photo-1665338091398-c71b9704abcb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" width="100" height="100" />';
+      //   cell53.innerHTML = " Hytera PD405";
+      //   cell54.innerHTML =
+      //     "We supply two way radios for hire and for purchase, allowing you to make a decision based on your business requirements.";
+      //   cell55.innerHTML = "$1200";
+
+      //body reference
+      let shopDetails = [
+        {
+          pname: "Motorola",
+          title: "Hytera PD405",
+          discription:
+            "We supply two way radios for hire and for purchase, allowing you to make a decision based on your business",
+          Image:
+            "https://images.unsplash.com/photo-1665338091398-c71b9704abcb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+          price: "$700",
+        },
+        {
+          pname: "Apple",
+          title: "Hytera PD405",
+          discription:
+            "We supply two way radios for hire and for purchase, allowing you to make a decision based on your business",
+          Image:
+            "https://images.unsplash.com/photo-1665338091398-c71b9704abcb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+          price: "$700",
+        },
+        {
+          pname: "Samsung",
+          title: "Hytera PD405",
+          discription:
+            "We supply two way radios for hire and for purchase, allowing you to make a decision based on your business",
+          Image:
+            "https://images.unsplash.com/photo-1665338091398-c71b9704abcb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+          price: "$700",
+        },
+        {
+          pname: "OnePlus",
+          title: "Hytera PD405",
+          discription:
+            "We supply two way radios for hire and for purchase, allowing you to make a decision based on your business",
+          Image:
+            "https://images.unsplash.com/photo-1665338091398-c71b9704abcb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+          price: "$700",
+        },
+        {
+          pname: "Google",
+          title: "Hytera PD405",
+          discription:
+            "We supply two way radios for hire and for purchase, allowing you to make a decision based on your business",
+          Image:
+            "https://images.unsplash.com/photo-1665338091398-c71b9704abcb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+          price: "$700",
+        },
+      ];
+      var body = document.getElementsByTagName("body")[0];
+      var tbl = document.createElement("table");
+      var tblBody = document.createElement("tbody");
+      for (var j = 0; j <= shopDetails.length; j++) {
+        var row = document.createElement("tr");
+        for (var i = 0; i < 5; i++) {
+          var cell = document.createElement("td");
+          var cellText = document.createTextNode(
+            // "cell is row " + j + ", column " + i
+            shopDetails[i].price
+          );
+
+          cell.appendChild(cellText);
+          row.appendChild(cell);
+        }
+        tblBody.appendChild(row);
+      }
+
+      tbl.appendChild(tblBody);
+      body.appendChild(tbl);
+      tbl.setAttribute("border", "2");
+    </script>
+  </body>
+</html>
